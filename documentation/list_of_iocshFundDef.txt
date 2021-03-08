@@ -1,126 +1,132 @@
-./pvDatabase/src/pvAccess/registerChannelProviderLocal.cpp:34:static const iocshFuncDef pvdblFuncDef = {
-./pvDatabase/src/special/processRecordRegister.cpp:41:static const iocshFuncDef processRecordFuncDef = {"processRecordCreate", 2,testArgs};
-./pvDatabase/src/special/traceRecordRegister.cpp:39:static const iocshFuncDef traceRecordFuncDef = {"traceRecordCreate", 1,testArgs};
-./pvDatabase/src/special/removeRecordRegister.cpp:38:static const iocshFuncDef removeRecordFuncDef = {"removeRecordCreate", 1,testArgs};
-./pvDatabase/src/special/addRecordRegister.cpp:38:static const iocshFuncDef addRecordFuncDef = {"addRecordCreate", 1,testArgs};
-./ca/src/client/acctstRegister.cpp:35:static const iocshFuncDef acctstFuncDef = {"acctst", 5, acctstArgs};
-./libcom/RTEMS/rtems_init.c:447:static const iocshFuncDef netStatFuncDef = {"netstat",1,netStatArgs};
-./libcom/RTEMS/rtems_init.c:453:static const iocshFuncDef heapSpaceFuncDef = {"heapSpace",0,NULL};
-./libcom/RTEMS/rtems_init.c:473:static const iocshFuncDef nfsMountFuncDef = {"nfsMount",3,nfsMountArgs};
-./libcom/RTEMS/rtems_init.c:502:static const iocshFuncDef zonesetFuncDef = {"zoneset",1,zonesetArgs};
-./libcom/test/iocshTest.cpp:64:const iocshFuncDef positionFuncDef = {"position",1,positionArgs};
-./libcom/test/iocshTest.cpp:79:const iocshFuncDef assertFuncDef = {"assert",1,assertArgs};
-./libcom/src/osi/osiNTPTime.c:67:static const iocshFuncDef ReportFuncDef = {"NTPTime_Report", 1, ReportArgs};
-./libcom/src/osi/osiNTPTime.c:74:static const iocshFuncDef ShutdownFuncDef = {"NTPTime_Shutdown", 0, NULL};
-./libcom/src/osi/osiClockTime.c:61:static const iocshFuncDef ReportFuncDef = {"ClockTime_Report", 1, ReportArgs};
-./libcom/src/osi/osiClockTime.c:68:static const iocshFuncDef ShutdownFuncDef = {"ClockTime_Shutdown", 0, NULL};
-./libcom/src/iocsh/iocsh.h:61:typedef struct iocshFuncDef {
-./libcom/src/iocsh/iocsh.cpp:132:    if (!registryAdd(iocshCmdID, piocshFuncDef->name, (void *)n)) {
-./libcom/src/iocsh/iocsh.cpp:166:static const iocshFuncDef varFuncDef = {"var", 2, varCmdArgs};
-./libcom/src/iocsh/iocsh.cpp:490:                if (epicsStrGlobMatch(piocshFuncDef->name, argv[iarg]) != 0) {
-./libcom/src/iocsh/iocsh.cpp:491:                    if(piocshFuncDef->usage) {
-./libcom/src/iocsh/iocsh.cpp:495:                    for (int a = 0 ; a < piocshFuncDef->nargs ; a++) {
-./libcom/src/iocsh/iocsh.cpp:506:                    if(piocshFuncDef->usage) {
-./libcom/src/iocsh/iocsh.cpp:933:                    if (iarg == piocshFuncDef->nargs) {
-./libcom/src/iocsh/iocsh.cpp:958:                    if (piocshFuncDef->arg[iarg]->type == iocshArgArgv) {
-./libcom/src/iocsh/iocsh.cpp:1142:static const iocshFuncDef iocshCmdFuncDef = {"iocshCmd",1,iocshCmdArgs};
-./libcom/src/iocsh/iocsh.cpp:1152:static const iocshFuncDef iocshLoadFuncDef = {"iocshLoad",2,iocshLoadArgs};
-./libcom/src/iocsh/iocsh.cpp:1162:static const iocshFuncDef iocshRunFuncDef = {"iocshRun",2,iocshRunArgs};
-./libcom/src/iocsh/iocsh.cpp:1171:static const iocshFuncDef onFuncDef = {"on", 1, onArgs,
-./libcom/src/iocsh/iocsh.cpp:1235:static const iocshFuncDef commentFuncDef = {"#",1,commentArgs};
-Binary file ./libcom/src/iocsh/.iocsh.cpp.swp matches
-./libcom/src/iocsh/libComRegister.c:49:static const iocshFuncDef dateFuncDef = {"date", 1, dateArgs};
-./libcom/src/iocsh/libComRegister.c:67:static const iocshFuncDef echoFuncDef = {"echo",1,echoArgs};
-./libcom/src/iocsh/libComRegister.c:76:static const iocshFuncDef chdirFuncDef = {"cd",1,chdirArgs};
-./libcom/src/iocsh/libComRegister.c:86:static const iocshFuncDef pwdFuncDef = { "pwd", 0, 0 };
-./libcom/src/iocsh/libComRegister.c:100:static const iocshFuncDef epicsEnvSetFuncDef = {"epicsEnvSet",2,epicsEnvSetArgs};
-./libcom/src/iocsh/libComRegister.c:120:static const iocshFuncDef epicsEnvUnsetFuncDef = {"epicsEnvUnset",1,epicsEnvUnsetArgs};
-./libcom/src/iocsh/libComRegister.c:138:static const iocshFuncDef epicsParamShowFuncDef = {"epicsParamShow",0,NULL};
-./libcom/src/iocsh/libComRegister.c:145:static const iocshFuncDef epicsPrtEnvParamsFuncDef = {"epicsPrtEnvParams",0,0};
-./libcom/src/iocsh/libComRegister.c:154:static const iocshFuncDef epicsEnvShowFuncDef = {"epicsEnvShow",1,epicsEnvShowArgs};
-./libcom/src/iocsh/libComRegister.c:161:static const iocshFuncDef registryDumpFuncDef = {"registryDump",0,NULL};
-./libcom/src/iocsh/libComRegister.c:168:static const iocshFuncDef iocLogInitFuncDef = {"iocLogInit",0};
-./libcom/src/iocsh/libComRegister.c:182:static const iocshFuncDef iocLogDisableFuncDef = {"setIocLogDisable",1,iocLogDisableArgs};
-./libcom/src/iocsh/libComRegister.c:191:static const iocshFuncDef iocLogShowFuncDef = {"iocLogShow",1,iocLogShowArgs};
-./libcom/src/iocsh/libComRegister.c:200:static const iocshFuncDef eltcFuncDef = {"eltc",1,eltcArgs};
-./libcom/src/iocsh/libComRegister.c:236:static const iocshFuncDef errlogFuncDef = {"errlog",1,errlogArgs};
-./libcom/src/iocsh/libComRegister.c:246:static const iocshFuncDef iocLogPrefixFuncDef = {"iocLogPrefix",1,iocLogPrefixArgs};
-./libcom/src/iocsh/libComRegister.c:265:static const iocshFuncDef threadFuncDef = {"epicsThreadShow",1,threadArgs};
-./libcom/src/iocsh/libComRegister.c:342:static const iocshFuncDef epicsThreadResumeFuncDef = {"epicsThreadResume",1,epicsThreadResumeArgs};
-./libcom/src/iocsh/libComRegister.c:384:static const iocshFuncDef generalTimeReportFuncDef = {"generalTimeReport",1,generalTimeReportArgs};
-./libcom/src/iocsh/libComRegister.c:391:static const iocshFuncDef installLastResortEventProviderFuncDef = {"installLastResortEventProvider", 0, NULL};
-./database/src/ioc/registry/registryIocRegister.c:24:static const iocshFuncDef registryRecordTypeFindFuncDef = {
-./database/src/ioc/registry/registryIocRegister.c:31:static const iocshFuncDef registryDeviceSupportFindFuncDef = {
-./database/src/ioc/registry/registryIocRegister.c:38:static const iocshFuncDef registryDriverSupportFindFuncDef = {
-./database/src/ioc/registry/registryIocRegister.c:45:static const iocshFuncDef registryFunctionFindFuncDef = {
-./database/src/ioc/misc/miscIocRegister.c:23:static const iocshFuncDef iocInitFuncDef = {"iocInit",0,NULL};
-./database/src/ioc/misc/miscIocRegister.c:30:static const iocshFuncDef iocBuildFuncDef = {"iocBuild",0,NULL};
-./database/src/ioc/misc/miscIocRegister.c:37:static const iocshFuncDef iocRunFuncDef = {"iocRun",0,NULL};
-./database/src/ioc/misc/miscIocRegister.c:44:static const iocshFuncDef iocPauseFuncDef = {"iocPause",0,NULL};
-./database/src/ioc/misc/miscIocRegister.c:51:static const iocshFuncDef coreReleaseFuncDef = {"coreRelease",0,NULL};
-./database/src/ioc/misc/miscIocRegister.c:78:static const iocshFuncDef systemFuncDef = {"system",1,systemArgs};
-./database/src/ioc/misc/dlload.c:22:static const iocshFuncDef dlloadFuncDef = {"dlload", 1, dlloadArgs};
-./database/src/ioc/rsrv/rsrvIocRegister.c:23:static const iocshFuncDef casrFuncDef = {"casr",1,casrArgs};
-./database/src/ioc/dbStatic/dbStaticIocRegister.c:26:static const iocshFuncDef dbDumpPathFuncDef = {"dbDumpPath",1,dbDumpPathArgs,
-./database/src/ioc/dbStatic/dbStaticIocRegister.c:48:static const iocshFuncDef dbDumpMenuFuncDef = {"dbDumpMenu",2,dbDumpMenuArgs};
-./database/src/ioc/dbStatic/dbStaticIocRegister.c:68:static const iocshFuncDef dbDumpFieldFuncDef = {"dbDumpField",3,dbDumpFieldArgs};
-./database/src/ioc/dbStatic/dbStaticIocRegister.c:77:static const iocshFuncDef dbDumpDeviceFuncDef = {"dbDumpDevice",2,dbDumpDeviceArgs};
-./database/src/ioc/dbStatic/dbStaticIocRegister.c:85:static const iocshFuncDef dbDumpDriverFuncDef = {"dbDumpDriver",1,dbDumpDriverArgs};
-./database/src/ioc/dbStatic/dbStaticIocRegister.c:93:static const iocshFuncDef dbDumpLinkFuncDef = {"dbDumpLink",1,dbDumpLinkArgs};
-./database/src/ioc/dbStatic/dbStaticIocRegister.c:101:static const iocshFuncDef dbDumpRegistrarFuncDef = {"dbDumpRegistrar",1,dbDumpRegistrarArgs};
-./database/src/ioc/dbStatic/dbStaticIocRegister.c:109:static const iocshFuncDef dbDumpFunctionFuncDef = {"dbDumpFunction",1,dbDumpFunctionArgs};
-./database/src/ioc/dbStatic/dbStaticIocRegister.c:117:static const iocshFuncDef dbDumpVariableFuncDef = {"dbDumpVariable",1,dbDumpVariableArgs};
-./database/src/ioc/dbStatic/dbStaticIocRegister.c:138:static const iocshFuncDef dbPvdDumpFuncDef = {"dbPvdDump",2,dbPvdDumpArgs};
-./database/src/ioc/dbStatic/dbStaticIocRegister.c:157:static const iocshFuncDef dbReportDeviceConfigFuncDef = {
-./database/src/ioc/as/asIocRegister.c:44:static const iocshFuncDef asInitFuncDef = {"asInit",0,0,
-./database/src/ioc/as/asIocRegister.c:52:static const iocshFuncDef asdbdumpFuncDef = {"asdbdump",0,0,
-./database/src/ioc/as/asIocRegister.c:62:static const iocshFuncDef aspuagFuncDef = {"aspuag",1,aspuagArgs,
-./database/src/ioc/as/asIocRegister.c:72:static const iocshFuncDef asphagFuncDef = {"asphag",1,asphagArgs,
-./database/src/ioc/as/asIocRegister.c:82:static const iocshFuncDef asprulesFuncDef = {"asprules",1,asprulesArgs,
-./database/src/ioc/as/asIocRegister.c:93:static const iocshFuncDef aspmemFuncDef = {"aspmem",2,aspmemArgs,
-./database/src/ioc/as/asIocRegister.c:105:static const iocshFuncDef astacFuncDef = {"astac",3,astacArgs,
-./database/src/ioc/as/asIocRegister.c:115:static const iocshFuncDef ascarFuncDef = {"ascar",1,ascarArgs,
-./database/src/ioc/as/asIocRegister.c:123:static const iocshFuncDef asDumpHashFuncDef = {"asDumpHash",0,0};
-./database/src/ioc/db/dbIocRegister.c:50:static const iocshFuncDef dbLoadRecordsFuncDef = {"dbLoadRecords",2,dbLoadRecordsArgs};
-./database/src/ioc/db/dbIocRegister.c:59:static const iocshFuncDef dbbFuncDef = {"dbb",1,dbbArgs,
-./database/src/ioc/db/dbIocRegister.c:66:static const iocshFuncDef dbdFuncDef = {"dbd",1,dbdArgs,
-./database/src/ioc/db/dbIocRegister.c:73:static const iocshFuncDef dbcFuncDef = {"dbc",1,dbcArgs,
-./database/src/ioc/db/dbIocRegister.c:80:static const iocshFuncDef dbsFuncDef = {"dbs",1,dbsArgs,
-./database/src/ioc/db/dbIocRegister.c:85:static const iocshFuncDef dbstatFuncDef = {"dbstat",0,0,
-./database/src/ioc/db/dbIocRegister.c:93:static const iocshFuncDef dbpFuncDef = {"dbp",2,dbpArgs,
-./database/src/ioc/db/dbIocRegister.c:101:static const iocshFuncDef dbapFuncDef = {"dbap",1,dbapArgs,
-./database/src/ioc/db/dbIocRegister.c:108:static const iocshFuncDef dbsrFuncDef = {"dbsr",1,dbsrArgs,
-./database/src/ioc/db/dbIocRegister.c:116:static const iocshFuncDef dbcarFuncDef = {"dbcar",2,dbcarArgs,
-./database/src/ioc/db/dbIocRegister.c:131:static const iocshFuncDef dbjlrFuncDef = {"dbjlr",2,dbjlrArgs,
-./database/src/ioc/db/dbIocRegister.c:142:static const iocshFuncDef dbelFuncDef = {"dbel",2,dbelArgs,
-./database/src/ioc/db/dbIocRegister.c:153:static const iocshFuncDef dbaFuncDef = {"dba",1,dbaArgs,
-./database/src/ioc/db/dbIocRegister.c:161:static const iocshFuncDef dblFuncDef = {"dbl",2,dblArgs,
-./database/src/ioc/db/dbIocRegister.c:173:static const iocshFuncDef dbnrFuncDef = {"dbnr",1,dbnrArgs,
-./database/src/ioc/db/dbIocRegister.c:180:static const iocshFuncDef dbliFuncDef = {"dbli",1,dbliArgs,
-./database/src/ioc/db/dbIocRegister.c:187:static const iocshFuncDef dblaFuncDef = {"dbla",1,dblaArgs,
-./database/src/ioc/db/dbIocRegister.c:194:static const iocshFuncDef dbgrepFuncDef = {"dbgrep",1,dbgrepArgs,
-./database/src/ioc/db/dbIocRegister.c:201:static const iocshFuncDef dbgfFuncDef = {"dbgf",1,dbgfArgs,
-./database/src/ioc/db/dbIocRegister.c:210:static const iocshFuncDef dbpfFuncDef = {"dbpf",2,dbpfArgs,
-./database/src/ioc/db/dbIocRegister.c:220:static const iocshFuncDef dbprFuncDef = {"dbpr",2,dbprArgs,
-./database/src/ioc/db/dbIocRegister.c:229:static const iocshFuncDef dbtrFuncDef = {"dbtr",1,dbtrArgs,
-./database/src/ioc/db/dbIocRegister.c:236:static const iocshFuncDef dbtgfFuncDef = {"dbtgf",1,dbtgfArgs,
-./database/src/ioc/db/dbIocRegister.c:245:static const iocshFuncDef dbtpfFuncDef = {"dbtpf",2,dbtpfArgs,
-./database/src/ioc/db/dbIocRegister.c:254:static const iocshFuncDef dbiorFuncDef = {"dbior",2,dbiorArgs,
-./database/src/ioc/db/dbIocRegister.c:260:static const iocshFuncDef dbhcrFuncDef = {"dbhcr",0,0,
-./database/src/ioc/db/dbIocRegister.c:267:static const iocshFuncDef gftFuncDef = {"gft",1,gftArgs,
-./database/src/ioc/db/dbIocRegister.c:275:static const iocshFuncDef pftFuncDef = {"pft",2,pftArgs,
-./database/src/ioc/db/dbIocRegister.c:284:static const iocshFuncDef dbtpnFuncDef = {"dbtpn",2,dbtpnArgs,
-./database/src/ioc/db/dbIocRegister.c:292:static const iocshFuncDef dbNotifyDumpFuncDef = {"dbNotifyDump",0,0,
-./database/src/ioc/db/dbIocRegister.c:312:static const iocshFuncDef tpnFuncDef = {"tpn",2,tpnArgs,
-./database/src/ioc/db/dbIocRegister.c:321:static const iocshFuncDef dblsrFuncDef = {"dblsr",2,dblsrArgs,
-./database/src/ioc/db/dbIocRegister.c:363:static const iocshFuncDef scanpplFuncDef = {"scanppl",1,scanpplArgs,
-./database/src/ioc/db/dbIocRegister.c:371:static const iocshFuncDef scanpelFuncDef = {"scanpel",1,scanpelArgs,
-./database/src/ioc/db/dbIocRegister.c:379:static const iocshFuncDef postEventFuncDef = {"postEvent",1,postEventArgs,
-./database/src/ioc/db/dbIocRegister.c:388:static const iocshFuncDef scanpiolFuncDef = {"scanpiol",0,0,
-./database/src/ioc/db/dbIocRegister.c:435:static const iocshFuncDef dbStateCreateFuncDef = { "dbStateCreate", 1, dbStateCreateArgs,
-./database/src/ioc/db/dbIocRegister.c:444:static const iocshFuncDef dbStateSetFuncDef = { "dbStateSet", 1, dbStateSetArgs,
-./database/src/ioc/db/dbIocRegister.c:456:static const iocshFuncDef dbStateClearFuncDef = { "dbStateClear", 1, dbStateClearArgs,
-./database/src/ioc/db/dbIocRegister.c:469:static const iocshFuncDef dbStateShowFuncDef = { "dbStateShow", 2, dbStateShowArgs,
-./database/src/ioc/db/dbIocRegister.c:482:static const iocshFuncDef dbStateShowAllFuncDef = { "dbStateShowAll", 1, dbStateShowAllArgs,
-./database/src/template/top/exampleApp/src/initTrace.c:31:static const iocshFuncDef traceInitFuncDef = {"traceIocInit", 0, NULL};
-./database/src/template/top/exampleApp/src/_APPNAME_Hello.c:20:static const iocshFuncDef helloFuncDef = {"hello", 1, helloArgs};
+### How to interpret the comments in brackets:
+# NOT - not documented ...
+# OK - documented
+# OK* - documented, but could be improved
+# PART - documented, but missing description of paramters or formating not ok
+
+
+[NOT]  modules/ca/src/client/acctstRegister.cpp:35:static const iocshFuncDef acctstFuncDef = {"acctst", 5, acctstArgs};
+
+[NOT]  modules/libcom/RTEMS/rtems_init.c:447:static const iocshFuncDef netStatFuncDef = {"netstat",1,netStatArgs};
+[NOT]  modules/libcom/RTEMS/rtems_init.c:453:static const iocshFuncDef heapSpaceFuncDef = {"heapSpace",0,NULL};
+[NOT]  modules/libcom/RTEMS/rtems_init.c:473:static const iocshFuncDef nfsMountFuncDef = {"nfsMount",3,nfsMountArgs};
+[NOT]  modules/libcom/RTEMS/rtems_init.c:502:static const iocshFuncDef zonesetFuncDef = {"zoneset",1,zonesetArgs};
+
+[NOT]  modules/libcom/test/iocshTest.cpp:64:const iocshFuncDef positionFuncDef = {"position",1,positionArgs};
+[NOT]  modules/libcom/test/iocshTest.cpp:79:const iocshFuncDef assertFuncDef = {"assert",1,assertArgs};
+
+[NOT]  modules/libcom/src/osi/osiNTPTime.c:67:static const iocshFuncDef ReportFuncDef = {"NTPTime_Report", 1, ReportArgs};
+[NOT]  modules/libcom/src/osi/osiNTPTime.c:74:static const iocshFuncDef ShutdownFuncDef = {"NTPTime_Shutdown", 0, NULL};
+[NOT]  modules/libcom/src/osi/osiClockTime.c:61:static const iocshFuncDef ReportFuncDef = {"ClockTime_Report", 1, ReportArgs};
+[NOT]  modules/libcom/src/osi/osiClockTime.c:68:static const iocshFuncDef ShutdownFuncDef = {"ClockTime_Shutdown", 0, NULL};
+
+[NOT]  modules/libcom/src/iocsh/iocsh.cpp:1142:static const iocshFuncDef iocshCmdFuncDef = {"iocshCmd",1,iocshCmdArgs};
+[NOT]  modules/libcom/src/iocsh/iocsh.cpp:1152:static const iocshFuncDef iocshLoadFuncDef = {"iocshLoad",2,iocshLoadArgs};
+[NOT]  modules/libcom/src/iocsh/iocsh.cpp:1162:static const iocshFuncDef iocshRunFuncDef = {"iocshRun",2,iocshRunArgs};
+[OK]  modules/libcom/src/iocsh/iocsh.cpp:1171:static const iocshFuncDef onFuncDef = {"on", 1, onArgs,
+[NOT]  modules/libcom/src/iocsh/iocsh.cpp:1235:static const iocshFuncDef commentFuncDef = {"#",1,commentArgs};
+
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:49:static const iocshFuncDef dateFuncDef = {"date", 1, dateArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:67:static const iocshFuncDef echoFuncDef = {"echo",1,echoArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:76:static const iocshFuncDef chdirFuncDef = {"cd",1,chdirArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:86:static const iocshFuncDef pwdFuncDef = { "pwd", 0, 0 };
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:100:static const iocshFuncDef epicsEnvSetFuncDef = {"epicsEnvSet",2,epicsEnvSetArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:120:static const iocshFuncDef epicsEnvUnsetFuncDef = {"epicsEnvUnset",1,epicsEnvUnsetArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:138:static const iocshFuncDef epicsParamShowFuncDef = {"epicsParamShow",0,NULL};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:145:static const iocshFuncDef epicsPrtEnvParamsFuncDef = {"epicsPrtEnvParams",0,0};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:154:static const iocshFuncDef epicsEnvShowFuncDef = {"epicsEnvShow",1,epicsEnvShowArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:161:static const iocshFuncDef registryDumpFuncDef = {"registryDump",0,NULL};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:168:static const iocshFuncDef iocLogInitFuncDef = {"iocLogInit",0};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:182:static const iocshFuncDef iocLogDisableFuncDef = {"setIocLogDisable",1,iocLogDisableArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:191:static const iocshFuncDef iocLogShowFuncDef = {"iocLogShow",1,iocLogShowArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:200:static const iocshFuncDef eltcFuncDef = {"eltc",1,eltcArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:236:static const iocshFuncDef errlogFuncDef = {"errlog",1,errlogArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:246:static const iocshFuncDef iocLogPrefixFuncDef = {"iocLogPrefix",1,iocLogPrefixArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:265:static const iocshFuncDef threadFuncDef = {"epicsThreadShow",1,threadArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:342:static const iocshFuncDef epicsThreadResumeFuncDef = {"epicsThreadResume",1,epicsThreadResumeArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:384:static const iocshFuncDef generalTimeReportFuncDef = {"generalTimeReport",1,generalTimeReportArgs};
+[NOT]  modules/libcom/src/iocsh/libComRegister.c:391:static const iocshFuncDef installLastResortEventProviderFuncDef = {"installLastResortEventProvider", 0, NULL};
+
+[NOT]  modules/database/src/ioc/registry/registryIocRegister.c:24:static const iocshFuncDef registryRecordTypeFindFuncDef = {
+[NOT]  modules/database/src/ioc/registry/registryIocRegister.c:31:static const iocshFuncDef registryDeviceSupportFindFuncDef = {
+[NOT]  modules/database/src/ioc/registry/registryIocRegister.c:38:static const iocshFuncDef registryDriverSupportFindFuncDef = {
+[NOT]  modules/database/src/ioc/registry/registryIocRegister.c:45:static const iocshFuncDef registryFunctionFindFuncDef = {
+
+[NOT]  modules/database/src/ioc/misc/miscIocRegister.c:23:static const iocshFuncDef iocInitFuncDef = {"iocInit",0,NULL};
+[NOT]  modules/database/src/ioc/misc/miscIocRegister.c:30:static const iocshFuncDef iocBuildFuncDef = {"iocBuild",0,NULL};
+[NOT]  modules/database/src/ioc/misc/miscIocRegister.c:37:static const iocshFuncDef iocRunFuncDef = {"iocRun",0,NULL};
+[NOT]  modules/database/src/ioc/misc/miscIocRegister.c:44:static const iocshFuncDef iocPauseFuncDef = {"iocPause",0,NULL};
+[NOT]  modules/database/src/ioc/misc/miscIocRegister.c:51:static const iocshFuncDef coreReleaseFuncDef = {"coreRelease",0,NULL};
+[NOT]  modules/database/src/ioc/misc/miscIocRegister.c:78:static const iocshFuncDef systemFuncDef = {"system",1,systemArgs};
+
+[NOT]  modules/database/src/ioc/misc/dlload.c:22:static const iocshFuncDef dlloadFuncDef = {"dlload", 1, dlloadArgs};
+
+[NOT]  modules/database/src/ioc/rsrv/rsrvIocRegister.c:23:static const iocshFuncDef casrFuncDef = {"casr",1,casrArgs};
+
+[OK]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:26:static const iocshFuncDef dbDumpPathFuncDef = {"dbDumpPath",1,dbDumpPathArgs,
+[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:48:static const iocshFuncDef dbDumpMenuFuncDef = {"dbDumpMenu",2,dbDumpMenuArgs};
+[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:68:static const iocshFuncDef dbDumpFieldFuncDef = {"dbDumpField",3,dbDumpFieldArgs};
+[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:77:static const iocshFuncDef dbDumpDeviceFuncDef = {"dbDumpDevice",2,dbDumpDeviceArgs};
+[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:85:static const iocshFuncDef dbDumpDriverFuncDef = {"dbDumpDriver",1,dbDumpDriverArgs};
+[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:93:static const iocshFuncDef dbDumpLinkFuncDef = {"dbDumpLink",1,dbDumpLinkArgs};
+[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:101:static const iocshFuncDef dbDumpRegistrarFuncDef = {"dbDumpRegistrar",1,dbDumpRegistrarArgs};
+[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:109:static const iocshFuncDef dbDumpFunctionFuncDef = {"dbDumpFunction",1,dbDumpFunctionArgs};
+[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:117:static const iocshFuncDef dbDumpVariableFuncDef = {"dbDumpVariable",1,dbDumpVariableArgs};
+[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:138:static const iocshFuncDef dbPvdDumpFuncDef = {"dbPvdDump",2,dbPvdDumpArgs};
+[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:157:static const iocshFuncDef dbReportDeviceConfigFuncDef = {
+
+[OK]  modules/database/src/ioc/as/asIocRegister.c:44:static const iocshFuncDef asInitFuncDef = {"asInit",0,0,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:52:static const iocshFuncDef asdbdumpFuncDef = {"asdbdump",0,0,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:62:static const iocshFuncDef aspuagFuncDef = {"aspuag",1,aspuagArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:72:static const iocshFuncDef asphagFuncDef = {"asphag",1,asphagArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:82:static const iocshFuncDef asprulesFuncDef = {"asprules",1,asprulesArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:93:static const iocshFuncDef aspmemFuncDef = {"aspmem",2,aspmemArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:105:static const iocshFuncDef astacFuncDef = {"astac",3,astacArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:115:static const iocshFuncDef ascarFuncDef = {"ascar",1,ascarArgs,
+[NOT]  modules/database/src/ioc/as/asIocRegister.c:123:static const iocshFuncDef asDumpHashFuncDef = {"asDumpHash",0,0};
+
+[NOT]  modules/database/src/ioc/db/dbIocRegister.c:50:static const iocshFuncDef dbLoadRecordsFuncDef = {"dbLoadRecords",2,dbLoadRecordsArgs};
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:59:static const iocshFuncDef dbbFuncDef = {"dbb",1,dbbArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:66:static const iocshFuncDef dbdFuncDef = {"dbd",1,dbdArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:73:static const iocshFuncDef dbcFuncDef = {"dbc",1,dbcArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:80:static const iocshFuncDef dbsFuncDef = {"dbs",1,dbsArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:85:static const iocshFuncDef dbstatFuncDef = {"dbstat",0,0,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:93:static const iocshFuncDef dbpFuncDef = {"dbp",2,dbpArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:101:static const iocshFuncDef dbapFuncDef = {"dbap",1,dbapArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:108:static const iocshFuncDef dbsrFuncDef = {"dbsr",1,dbsrArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:116:static const iocshFuncDef dbcarFuncDef = {"dbcar",2,dbcarArgs,
+[PART]  modules/database/src/ioc/db/dbIocRegister.c:131:static const iocshFuncDef dbjlrFuncDef = {"dbjlr",2,dbjlrArgs,
+[PART]  modules/database/src/ioc/db/dbIocRegister.c:142:static const iocshFuncDef dbelFuncDef = {"dbel",2,dbelArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:153:static const iocshFuncDef dbaFuncDef = {"dba",1,dbaArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:161:static const iocshFuncDef dblFuncDef = {"dbl",2,dblArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:173:static const iocshFuncDef dbnrFuncDef = {"dbnr",1,dbnrArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:180:static const iocshFuncDef dbliFuncDef = {"dbli",1,dbliArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:187:static const iocshFuncDef dblaFuncDef = {"dbla",1,dblaArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:194:static const iocshFuncDef dbgrepFuncDef = {"dbgrep",1,dbgrepArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:201:static const iocshFuncDef dbgfFuncDef = {"dbgf",1,dbgfArgs,
+[OK*]  modules/database/src/ioc/db/dbIocRegister.c:210:static const iocshFuncDef dbpfFuncDef = {"dbpf",2,dbpfArgs,
+[PART]  modules/database/src/ioc/db/dbIocRegister.c:220:static const iocshFuncDef dbprFuncDef = {"dbpr",2,dbprArgs,
+[PART]  modules/database/src/ioc/db/dbIocRegister.c:229:static const iocshFuncDef dbtrFuncDef = {"dbtr",1,dbtrArgs,
+[PART]  modules/database/src/ioc/db/dbIocRegister.c:236:static const iocshFuncDef dbtgfFuncDef = {"dbtgf",1,dbtgfArgs,
+[PART]  modules/database/src/ioc/db/dbIocRegister.c:245:static const iocshFuncDef dbtpfFuncDef = {"dbtpf",2,dbtpfArgs,
+[PART]  modules/database/src/ioc/db/dbIocRegister.c:254:static const iocshFuncDef dbiorFuncDef = {"dbior",2,dbiorArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:260:static const iocshFuncDef dbhcrFuncDef = {"dbhcr",0,0,
+[OK*]  modules/database/src/ioc/db/dbIocRegister.c:267:static const iocshFuncDef gftFuncDef = {"gft",1,gftArgs,
+[OK*]  modules/database/src/ioc/db/dbIocRegister.c:275:static const iocshFuncDef pftFuncDef = {"pft",2,pftArgs,
+[PART]  modules/database/src/ioc/db/dbIocRegister.c:284:static const iocshFuncDef dbtpnFuncDef = {"dbtpn",2,dbtpnArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:292:static const iocshFuncDef dbNotifyDumpFuncDef = {"dbNotifyDump",0,0,
+[OK*]  modules/database/src/ioc/db/dbIocRegister.c:312:static const iocshFuncDef tpnFuncDef = {"tpn",2,tpnArgs,
+[PART]  modules/database/src/ioc/db/dbIocRegister.c:321:static const iocshFuncDef dblsrFuncDef = {"dblsr",2,dblsrArgs,
+[OK*]  modules/database/src/ioc/db/dbIocRegister.c:363:static const iocshFuncDef scanpplFuncDef = {"scanppl",1,scanpplArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:371:static const iocshFuncDef scanpelFuncDef = {"scanpel",1,scanpelArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:379:static const iocshFuncDef postEventFuncDef = {"postEvent",1,postEventArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:388:static const iocshFuncDef scanpiolFuncDef = {"scanpiol",0,0,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:435:static const iocshFuncDef dbStateCreateFuncDef = { "dbStateCreate", 1, dbStateCreateArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:444:static const iocshFuncDef dbStateSetFuncDef = { "dbStateSet", 1, dbStateSetArgs,
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:456:static const iocshFuncDef dbStateClearFuncDef = { "dbStateClear", 1, dbStateClearArgs,
+[OK*]  modules/database/src/ioc/db/dbIocRegister.c:469:static const iocshFuncDef dbStateShowFuncDef = { "dbStateShow", 2, dbStateShowArgs,
+[OK*]  modules/database/src/ioc/db/dbIocRegister.c:482:static const iocshFuncDef dbStateShowAllFuncDef = { "dbStateShowAll", 1, dbStateShowAllArgs,
+
+[NOT]  modules/database/src/template/top/exampleApp/src/initTrace.c:31:static const iocshFuncDef traceInitFuncDef = {"traceIocInit", 0, NULL};
+
+[NOT]  modules/database/src/template/top/exampleApp/src/_APPNAME_Hello.c:20:static const iocshFuncDef helloFuncDef = {"hello", 1, helloArgs};
