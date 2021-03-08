@@ -26,9 +26,9 @@
 [OK]  modules/libcom/src/iocsh/iocsh.cpp:1171:static const iocshFuncDef onFuncDef = {"on", 1, onArgs,
 [NOT]  modules/libcom/src/iocsh/iocsh.cpp:1235:static const iocshFuncDef commentFuncDef = {"#",1,commentArgs};
 
-[NOT]  modules/libcom/src/iocsh/libComRegister.c:49:static const iocshFuncDef dateFuncDef = {"date", 1, dateArgs};
-[NOT]  modules/libcom/src/iocsh/libComRegister.c:67:static const iocshFuncDef echoFuncDef = {"echo",1,echoArgs};
-[NOT]  modules/libcom/src/iocsh/libComRegister.c:76:static const iocshFuncDef chdirFuncDef = {"cd",1,chdirArgs};
+[OK]  modules/libcom/src/iocsh/libComRegister.c:49:static const iocshFuncDef dateFuncDef = {"date", 1, dateArgs};
+[OK]  modules/libcom/src/iocsh/libComRegister.c:67:static const iocshFuncDef echoFuncDef = {"echo",1,echoArgs};
+[OK]  modules/libcom/src/iocsh/libComRegister.c:76:static const iocshFuncDef chdirFuncDef = {"cd",1,chdirArgs};
 [NOT]  modules/libcom/src/iocsh/libComRegister.c:86:static const iocshFuncDef pwdFuncDef = { "pwd", 0, 0 };
 [NOT]  modules/libcom/src/iocsh/libComRegister.c:100:static const iocshFuncDef epicsEnvSetFuncDef = {"epicsEnvSet",2,epicsEnvSetArgs};
 [NOT]  modules/libcom/src/iocsh/libComRegister.c:120:static const iocshFuncDef epicsEnvUnsetFuncDef = {"epicsEnvUnset",1,epicsEnvUnsetArgs};
