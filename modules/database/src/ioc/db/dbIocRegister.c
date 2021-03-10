@@ -47,7 +47,8 @@ static void dbLoadDatabaseCallFunc(const iocshArgBuf *args)
 static const iocshArg dbLoadRecordsArg0 = { "file name",iocshArgString};
 static const iocshArg dbLoadRecordsArg1 = { "substitutions",iocshArgString};
 static const iocshArg * const dbLoadRecordsArgs[2] = {&dbLoadRecordsArg0,&dbLoadRecordsArg1};
-static const iocshFuncDef dbLoadRecordsFuncDef = {"dbLoadRecords",2,dbLoadRecordsArgs};
+static const iocshFuncDef dbLoadRecordsFuncDef = {"dbLoadRecords",2,dbLoadRecordsArgs,
+                                                  "Loads a file containing record instances, record aliases and/or breakpoint tables.\n"};
 static void dbLoadRecordsCallFunc(const iocshArgBuf *args)
 {
     iocshSetError(dbLoadRecords(args[0].sval,args[1].sval));
