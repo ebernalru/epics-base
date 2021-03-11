@@ -20,11 +20,14 @@
 [NOT]  modules/libcom/src/osi/osiClockTime.c:61:static const iocshFuncDef ReportFuncDef = {"ClockTime_Report", 1, ReportArgs};
 [NOT]  modules/libcom/src/osi/osiClockTime.c:68:static const iocshFuncDef ShutdownFuncDef = {"ClockTime_Shutdown", 0, NULL};
 
-[NOT]  modules/libcom/src/iocsh/iocsh.cpp:1142:static const iocshFuncDef iocshCmdFuncDef = {"iocshCmd",1,iocshCmdArgs};
-[NOT]  modules/libcom/src/iocsh/iocsh.cpp:1152:static const iocshFuncDef iocshLoadFuncDef = {"iocshLoad",2,iocshLoadArgs};
-[NOT]  modules/libcom/src/iocsh/iocsh.cpp:1162:static const iocshFuncDef iocshRunFuncDef = {"iocshRun",2,iocshRunArgs};
+- zioven
+[OK]  modules/libcom/src/iocsh/iocsh.cpp:167:static const iocshFuncDef varFuncDef = {"var",4,varCmdArgs};
+[OK]  modules/libcom/src/iocsh/iocsh.cpp:449:static const helpFuncDef varFuncDef = {"help",1,helpCmdArgs};
+[OK]  modules/libcom/src/iocsh/iocsh.cpp:1142:static const iocshFuncDef iocshCmdFuncDef = {"iocshCmd",1,iocshCmdArgs};
+[PART]  modules/libcom/src/iocsh/iocsh.cpp:1152:static const iocshFuncDef iocshLoadFuncDef = {"iocshLoad",3,iocshLoadArgs};
+[OK]  modules/libcom/src/iocsh/iocsh.cpp:1162:static const iocshFuncDef iocshRunFuncDef = {"iocshRun",2,iocshRunArgs};
 [OK]  modules/libcom/src/iocsh/iocsh.cpp:1171:static const iocshFuncDef onFuncDef = {"on", 1, onArgs,
-[NOT]  modules/libcom/src/iocsh/iocsh.cpp:1235:static const iocshFuncDef commentFuncDef = {"#",1,commentArgs};
+[OK]  modules/libcom/src/iocsh/iocsh.cpp:1236:static const iocshFuncDef commentFuncDef = {"#",2,commentArgs};
 
 - zioven
 [OK]  modules/libcom/src/iocsh/libComRegister.c:49:static const iocshFuncDef dateFuncDef = {"date", 1, dateArgs};
