@@ -26,6 +26,7 @@
 [OK]  modules/libcom/src/iocsh/iocsh.cpp:1171:static const iocshFuncDef onFuncDef = {"on", 1, onArgs,
 [NOT]  modules/libcom/src/iocsh/iocsh.cpp:1235:static const iocshFuncDef commentFuncDef = {"#",1,commentArgs};
 
+- zioven
 [OK]  modules/libcom/src/iocsh/libComRegister.c:49:static const iocshFuncDef dateFuncDef = {"date", 1, dateArgs};
 [OK]  modules/libcom/src/iocsh/libComRegister.c:67:static const iocshFuncDef echoFuncDef = {"echo",1,echoArgs};
 [OK]  modules/libcom/src/iocsh/libComRegister.c:76:static const iocshFuncDef chdirFuncDef = {"cd",1,chdirArgs};
@@ -47,28 +48,30 @@
 [OK]  modules/libcom/src/iocsh/libComRegister.c:265:static const iocshFuncDef epicsThreadShowAllFuncDef = {"epicsThreadShowAll",1,threadArgs};
 [OK]  modules/libcom/src/iocsh/libComRegister.c:265:static const iocshFuncDef threadFuncDef = {"epicsThreadShow",1,threadArgs};
 [PART]  modules/libcom/src/iocsh/libComRegister.c:342:static const iocshFuncDef taskwdShowFuncDef = {"taskwdShow",1,epicsThreadResumeArgs};
-[NOT]  modules/libcom/src/iocsh/libComRegister.c:342:static const iocshFuncDef epicsMutexShowAllFuncDef = {"epicsMutexShowAll",1,epicsThreadResumeArgs};
-[NOT]  modules/libcom/src/iocsh/libComRegister.c:342:static const iocshFuncDef epicsThreadSleepFuncDef = {"epicsThreadSleep",1,epicsThreadResumeArgs};
-[NOT]  modules/libcom/src/iocsh/libComRegister.c:342:static const iocshFuncDef epicsThreadResumeFuncDef = {"epicsThreadResume",1,epicsThreadResumeArgs};
-[NOT]  modules/libcom/src/iocsh/libComRegister.c:384:static const iocshFuncDef generalTimeReportFuncDef = {"generalTimeReport",1,generalTimeReportArgs};
-[NOT]  modules/libcom/src/iocsh/libComRegister.c:391:static const iocshFuncDef installLastResortEventProviderFuncDef = {"installLastResortEventProvider", 0, NULL};
+[OK]  modules/libcom/src/iocsh/libComRegister.c:342:static const iocshFuncDef epicsMutexShowAllFuncDef = {"epicsMutexShowAll",2,epicsThreadResumeArgs};
+[OK]  modules/libcom/src/iocsh/libComRegister.c:343:static const iocshFuncDef epicsThreadSleepFuncDef = {"epicsThreadSleep",1,epicsThreadResumeArgs};
+[OK]  modules/libcom/src/iocsh/libComRegister.c:343:static const iocshFuncDef epicsThreadResumeFuncDef = {"epicsThreadResume",1,epicsThreadResumeArgs};
+[OK]  modules/libcom/src/iocsh/libComRegister.c:384:static const iocshFuncDef generalTimeReportFuncDef = {"generalTimeReport",1,generalTimeReportArgs};
+[OK]  modules/libcom/src/iocsh/libComRegister.c:391:static const iocshFuncDef installLastResortEventProviderFuncDef = {"installLastResortEventProvider", 0, NULL};
 
 [NOT]  modules/database/src/ioc/registry/registryIocRegister.c:24:static const iocshFuncDef registryRecordTypeFindFuncDef = {
 [NOT]  modules/database/src/ioc/registry/registryIocRegister.c:31:static const iocshFuncDef registryDeviceSupportFindFuncDef = {
 [NOT]  modules/database/src/ioc/registry/registryIocRegister.c:38:static const iocshFuncDef registryDriverSupportFindFuncDef = {
 [NOT]  modules/database/src/ioc/registry/registryIocRegister.c:45:static const iocshFuncDef registryFunctionFindFuncDef = {
 
-[NOT]  modules/database/src/ioc/misc/miscIocRegister.c:23:static const iocshFuncDef iocInitFuncDef = {"iocInit",0,NULL};
-[NOT]  modules/database/src/ioc/misc/miscIocRegister.c:30:static const iocshFuncDef iocBuildFuncDef = {"iocBuild",0,NULL};
-[NOT]  modules/database/src/ioc/misc/miscIocRegister.c:37:static const iocshFuncDef iocRunFuncDef = {"iocRun",0,NULL};
-[NOT]  modules/database/src/ioc/misc/miscIocRegister.c:44:static const iocshFuncDef iocPauseFuncDef = {"iocPause",0,NULL};
-[NOT]  modules/database/src/ioc/misc/miscIocRegister.c:51:static const iocshFuncDef coreReleaseFuncDef = {"coreRelease",0,NULL};
-[NOT]  modules/database/src/ioc/misc/miscIocRegister.c:78:static const iocshFuncDef systemFuncDef = {"system",1,systemArgs};
+- oksanagit
+[OK]  modules/database/src/ioc/misc/miscIocRegister.c:23:static const iocshFuncDef iocInitFuncDef = {"iocInit",0,NULL};
+[OK]  modules/database/src/ioc/misc/miscIocRegister.c:30:static const iocshFuncDef iocBuildFuncDef = {"iocBuild",0,NULL};
+[OK]  modules/database/src/ioc/misc/miscIocRegister.c:37:static const iocshFuncDef iocRunFuncDef = {"iocRun",0,NULL};
+[OK]  modules/database/src/ioc/misc/miscIocRegister.c:44:static const iocshFuncDef iocPauseFuncDef = {"iocPause",0,NULL};
+[OK]  modules/database/src/ioc/misc/miscIocRegister.c:51:static const iocshFuncDef coreReleaseFuncDef = {"coreRelease",0,NULL};
+[OK]  modules/database/src/ioc/misc/miscIocRegister.c:78:static const iocshFuncDef systemFuncDef = {"system",1,systemArgs};
 
 [NOT]  modules/database/src/ioc/misc/dlload.c:22:static const iocshFuncDef dlloadFuncDef = {"dlload", 1, dlloadArgs};
 
 [NOT]  modules/database/src/ioc/rsrv/rsrvIocRegister.c:23:static const iocshFuncDef casrFuncDef = {"casr",1,casrArgs};
 
+- oksanagit
 [OK]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:26:static const iocshFuncDef dbDumpPathFuncDef = {"dbDumpPath",1,dbDumpPathArgs,
 [NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:48:static const iocshFuncDef dbDumpMenuFuncDef = {"dbDumpMenu",2,dbDumpMenuArgs};
 [NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:68:static const iocshFuncDef dbDumpFieldFuncDef = {"dbDumpField",3,dbDumpFieldArgs};
@@ -91,6 +94,7 @@
 [OK]  modules/database/src/ioc/as/asIocRegister.c:115:static const iocshFuncDef ascarFuncDef = {"ascar",1,ascarArgs,
 [NOT]  modules/database/src/ioc/as/asIocRegister.c:123:static const iocshFuncDef asDumpHashFuncDef = {"asDumpHash",0,0};
 
+- ebernalru
 [NOT]  modules/database/src/ioc/db/dbIocRegister.c:50:static const iocshFuncDef dbLoadRecordsFuncDef = {"dbLoadRecords",2,dbLoadRecordsArgs};
 [OK]  modules/database/src/ioc/db/dbIocRegister.c:59:static const iocshFuncDef dbbFuncDef = {"dbb",1,dbbArgs,
 [OK]  modules/database/src/ioc/db/dbIocRegister.c:66:static const iocshFuncDef dbdFuncDef = {"dbd",1,dbdArgs,
