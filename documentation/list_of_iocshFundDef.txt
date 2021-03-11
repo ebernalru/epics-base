@@ -20,6 +20,29 @@
 [NOT]  modules/libcom/src/osi/osiClockTime.c:61:static const iocshFuncDef ReportFuncDef = {"ClockTime_Report", 1, ReportArgs};
 [NOT]  modules/libcom/src/osi/osiClockTime.c:68:static const iocshFuncDef ShutdownFuncDef = {"ClockTime_Shutdown", 0, NULL};
 
+[NOT]  modules/database/src/ioc/misc/dlload.c:22:static const iocshFuncDef dlloadFuncDef = {"dlload", 1, dlloadArgs};
+
+[NOT]  modules/database/src/ioc/rsrv/rsrvIocRegister.c:23:static const iocshFuncDef casrFuncDef = {"casr",1,casrArgs};
+
+[OK]  modules/database/src/ioc/as/asIocRegister.c:44:static const iocshFuncDef asInitFuncDef = {"asInit",0,0,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:52:static const iocshFuncDef asdbdumpFuncDef = {"asdbdump",0,0,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:62:static const iocshFuncDef aspuagFuncDef = {"aspuag",1,aspuagArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:72:static const iocshFuncDef asphagFuncDef = {"asphag",1,asphagArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:82:static const iocshFuncDef asprulesFuncDef = {"asprules",1,asprulesArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:93:static const iocshFuncDef aspmemFuncDef = {"aspmem",2,aspmemArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:105:static const iocshFuncDef astacFuncDef = {"astac",3,astacArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:115:static const iocshFuncDef ascarFuncDef = {"ascar",1,ascarArgs,
+[NOT]  modules/database/src/ioc/as/asIocRegister.c:123:static const iocshFuncDef asDumpHashFuncDef = {"asDumpHash",0,0};
+
+[NOT]  modules/database/src/ioc/registry/registryIocRegister.c:24:static const iocshFuncDef registryRecordTypeFindFuncDef = {
+[NOT]  modules/database/src/ioc/registry/registryIocRegister.c:31:static const iocshFuncDef registryDeviceSupportFindFuncDef = {
+[NOT]  modules/database/src/ioc/registry/registryIocRegister.c:38:static const iocshFuncDef registryDriverSupportFindFuncDef = {
+[NOT]  modules/database/src/ioc/registry/registryIocRegister.c:45:static const iocshFuncDef registryFunctionFindFuncDef = {
+
+[NOT]  modules/database/src/template/top/exampleApp/src/initTrace.c:31:static const iocshFuncDef traceInitFuncDef = {"traceIocInit", 0, NULL};
+
+[NOT]  modules/database/src/template/top/exampleApp/src/_APPNAME_Hello.c:20:static const iocshFuncDef helloFuncDef = {"hello", 1, helloArgs};
+
 - zioven
 [OK]  modules/libcom/src/iocsh/iocsh.cpp:167:static const iocshFuncDef varFuncDef = {"var",4,varCmdArgs};
 [OK]  modules/libcom/src/iocsh/iocsh.cpp:449:static const helpFuncDef varFuncDef = {"help",1,helpCmdArgs};
@@ -57,11 +80,6 @@
 [OK]  modules/libcom/src/iocsh/libComRegister.c:384:static const iocshFuncDef generalTimeReportFuncDef = {"generalTimeReport",1,generalTimeReportArgs};
 [OK]  modules/libcom/src/iocsh/libComRegister.c:391:static const iocshFuncDef installLastResortEventProviderFuncDef = {"installLastResortEventProvider", 0, NULL};
 
-[NOT]  modules/database/src/ioc/registry/registryIocRegister.c:24:static const iocshFuncDef registryRecordTypeFindFuncDef = {
-[NOT]  modules/database/src/ioc/registry/registryIocRegister.c:31:static const iocshFuncDef registryDeviceSupportFindFuncDef = {
-[NOT]  modules/database/src/ioc/registry/registryIocRegister.c:38:static const iocshFuncDef registryDriverSupportFindFuncDef = {
-[NOT]  modules/database/src/ioc/registry/registryIocRegister.c:45:static const iocshFuncDef registryFunctionFindFuncDef = {
-
 - oksanagit
 [OK]  modules/database/src/ioc/misc/miscIocRegister.c:23:static const iocshFuncDef iocInitFuncDef = {"iocInit",0,NULL};
 [OK]  modules/database/src/ioc/misc/miscIocRegister.c:30:static const iocshFuncDef iocBuildFuncDef = {"iocBuild",0,NULL};
@@ -69,10 +87,6 @@
 [OK]  modules/database/src/ioc/misc/miscIocRegister.c:44:static const iocshFuncDef iocPauseFuncDef = {"iocPause",0,NULL};
 [OK]  modules/database/src/ioc/misc/miscIocRegister.c:51:static const iocshFuncDef coreReleaseFuncDef = {"coreRelease",0,NULL};
 [OK]  modules/database/src/ioc/misc/miscIocRegister.c:78:static const iocshFuncDef systemFuncDef = {"system",1,systemArgs};
-
-[NOT]  modules/database/src/ioc/misc/dlload.c:22:static const iocshFuncDef dlloadFuncDef = {"dlload", 1, dlloadArgs};
-
-[NOT]  modules/database/src/ioc/rsrv/rsrvIocRegister.c:23:static const iocshFuncDef casrFuncDef = {"casr",1,casrArgs};
 
 - oksanagit
 [OK]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:26:static const iocshFuncDef dbDumpPathFuncDef = {"dbDumpPath",1,dbDumpPathArgs,
@@ -86,16 +100,6 @@
 [NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:117:static const iocshFuncDef dbDumpVariableFuncDef = {"dbDumpVariable",1,dbDumpVariableArgs};
 [NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:138:static const iocshFuncDef dbPvdDumpFuncDef = {"dbPvdDump",2,dbPvdDumpArgs};
 [NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:157:static const iocshFuncDef dbReportDeviceConfigFuncDef = {
-
-[OK]  modules/database/src/ioc/as/asIocRegister.c:44:static const iocshFuncDef asInitFuncDef = {"asInit",0,0,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:52:static const iocshFuncDef asdbdumpFuncDef = {"asdbdump",0,0,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:62:static const iocshFuncDef aspuagFuncDef = {"aspuag",1,aspuagArgs,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:72:static const iocshFuncDef asphagFuncDef = {"asphag",1,asphagArgs,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:82:static const iocshFuncDef asprulesFuncDef = {"asprules",1,asprulesArgs,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:93:static const iocshFuncDef aspmemFuncDef = {"aspmem",2,aspmemArgs,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:105:static const iocshFuncDef astacFuncDef = {"astac",3,astacArgs,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:115:static const iocshFuncDef ascarFuncDef = {"ascar",1,ascarArgs,
-[NOT]  modules/database/src/ioc/as/asIocRegister.c:123:static const iocshFuncDef asDumpHashFuncDef = {"asDumpHash",0,0};
 
 - ebernalru
 [NOT]  modules/database/src/ioc/db/dbIocRegister.c:50:static const iocshFuncDef dbLoadRecordsFuncDef = {"dbLoadRecords",2,dbLoadRecordsArgs};
@@ -139,7 +143,3 @@
 [OK]  modules/database/src/ioc/db/dbIocRegister.c:456:static const iocshFuncDef dbStateClearFuncDef = { "dbStateClear", 1, dbStateClearArgs,
 [OK*]  modules/database/src/ioc/db/dbIocRegister.c:469:static const iocshFuncDef dbStateShowFuncDef = { "dbStateShow", 2, dbStateShowArgs,
 [OK*]  modules/database/src/ioc/db/dbIocRegister.c:482:static const iocshFuncDef dbStateShowAllFuncDef = { "dbStateShowAll", 1, dbStateShowAllArgs,
-
-[NOT]  modules/database/src/template/top/exampleApp/src/initTrace.c:31:static const iocshFuncDef traceInitFuncDef = {"traceIocInit", 0, NULL};
-
-[NOT]  modules/database/src/template/top/exampleApp/src/_APPNAME_Hello.c:20:static const iocshFuncDef helloFuncDef = {"hello", 1, helloArgs};
