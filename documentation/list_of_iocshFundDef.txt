@@ -15,11 +15,6 @@
 [NOT]  modules/libcom/test/iocshTest.cpp:64:const iocshFuncDef positionFuncDef = {"position",1,positionArgs};
 [NOT]  modules/libcom/test/iocshTest.cpp:79:const iocshFuncDef assertFuncDef = {"assert",1,assertArgs};
 
-[NOT]  modules/libcom/src/osi/osiNTPTime.c:67:static const iocshFuncDef ReportFuncDef = {"NTPTime_Report", 1, ReportArgs};
-[NOT]  modules/libcom/src/osi/osiNTPTime.c:74:static const iocshFuncDef ShutdownFuncDef = {"NTPTime_Shutdown", 0, NULL};
-[NOT]  modules/libcom/src/osi/osiClockTime.c:61:static const iocshFuncDef ReportFuncDef = {"ClockTime_Report", 1, ReportArgs};
-[NOT]  modules/libcom/src/osi/osiClockTime.c:68:static const iocshFuncDef ShutdownFuncDef = {"ClockTime_Shutdown", 0, NULL};
-
 [NOT]  modules/database/src/ioc/misc/dlload.c:22:static const iocshFuncDef dlloadFuncDef = {"dlload", 1, dlloadArgs};
 
 [NOT]  modules/database/src/ioc/rsrv/rsrvIocRegister.c:23:static const iocshFuncDef casrFuncDef = {"casr",1,casrArgs};
@@ -42,6 +37,12 @@
 [NOT]  modules/database/src/template/top/exampleApp/src/initTrace.c:31:static const iocshFuncDef traceInitFuncDef = {"traceIocInit", 0, NULL};
 
 [NOT]  modules/database/src/template/top/exampleApp/src/_APPNAME_Hello.c:20:static const iocshFuncDef helloFuncDef = {"hello", 1, helloArgs};
+
+- zioven
+[PART]  modules/libcom/src/osi/osiNTPTime.c:67:static const iocshFuncDef ReportFuncDef = {"NTPTime_Report", 1, ReportArgs};
+[PART]  modules/libcom/src/osi/osiNTPTime.c:74:static const iocshFuncDef ShutdownFuncDef = {"NTPTime_Shutdown", 0, NULL};
+[PART]  modules/libcom/src/osi/osiClockTime.c:61:static const iocshFuncDef ReportFuncDef = {"ClockTime_Report", 1, ReportArgs};
+[PART]  modules/libcom/src/osi/osiClockTime.c:68:static const iocshFuncDef ShutdownFuncDef = {"ClockTime_Shutdown", 0, NULL};
 
 - zioven
 [OK]  modules/libcom/src/iocsh/iocsh.cpp:167:static const iocshFuncDef varFuncDef = {"var",4,varCmdArgs};
