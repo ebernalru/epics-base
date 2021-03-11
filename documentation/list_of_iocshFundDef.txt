@@ -19,16 +19,6 @@
 
 [NOT]  modules/database/src/ioc/rsrv/rsrvIocRegister.c:23:static const iocshFuncDef casrFuncDef = {"casr",1,casrArgs};
 
-[OK]  modules/database/src/ioc/as/asIocRegister.c:44:static const iocshFuncDef asInitFuncDef = {"asInit",0,0,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:52:static const iocshFuncDef asdbdumpFuncDef = {"asdbdump",0,0,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:62:static const iocshFuncDef aspuagFuncDef = {"aspuag",1,aspuagArgs,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:72:static const iocshFuncDef asphagFuncDef = {"asphag",1,asphagArgs,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:82:static const iocshFuncDef asprulesFuncDef = {"asprules",1,asprulesArgs,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:93:static const iocshFuncDef aspmemFuncDef = {"aspmem",2,aspmemArgs,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:105:static const iocshFuncDef astacFuncDef = {"astac",3,astacArgs,
-[OK]  modules/database/src/ioc/as/asIocRegister.c:115:static const iocshFuncDef ascarFuncDef = {"ascar",1,ascarArgs,
-[NOT]  modules/database/src/ioc/as/asIocRegister.c:123:static const iocshFuncDef asDumpHashFuncDef = {"asDumpHash",0,0};
-
 [NOT]  modules/database/src/ioc/registry/registryIocRegister.c:24:static const iocshFuncDef registryRecordTypeFindFuncDef = {
 [NOT]  modules/database/src/ioc/registry/registryIocRegister.c:31:static const iocshFuncDef registryDeviceSupportFindFuncDef = {
 [NOT]  modules/database/src/ioc/registry/registryIocRegister.c:38:static const iocshFuncDef registryDriverSupportFindFuncDef = {
@@ -37,6 +27,17 @@
 [NOT]  modules/database/src/template/top/exampleApp/src/initTrace.c:31:static const iocshFuncDef traceInitFuncDef = {"traceIocInit", 0, NULL};
 
 [NOT]  modules/database/src/template/top/exampleApp/src/_APPNAME_Hello.c:20:static const iocshFuncDef helloFuncDef = {"hello", 1, helloArgs};
+
+- zioven
+[OK]  modules/database/src/ioc/as/asIocRegister.c:44:static const iocshFuncDef asInitFuncDef = {"asInit",0,0,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:52:static const iocshFuncDef asdbdumpFuncDef = {"asdbdump",0,0,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:62:static const iocshFuncDef aspuagFuncDef = {"aspuag",1,aspuagArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:72:static const iocshFuncDef asphagFuncDef = {"asphag",1,asphagArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:82:static const iocshFuncDef asprulesFuncDef = {"asprules",1,asprulesArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:93:static const iocshFuncDef aspmemFuncDef = {"aspmem",2,aspmemArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:105:static const iocshFuncDef astacFuncDef = {"astac",3,astacArgs,
+[OK]  modules/database/src/ioc/as/asIocRegister.c:115:static const iocshFuncDef ascarFuncDef = {"ascar",1,ascarArgs,
+[PART]  modules/database/src/ioc/as/asIocRegister.c:123:static const iocshFuncDef asDumpHashFuncDef = {"asDumpHash",0,0};
 
 - zioven
 [PART]  modules/libcom/src/osi/osiNTPTime.c:67:static const iocshFuncDef ReportFuncDef = {"NTPTime_Report", 1, ReportArgs};
