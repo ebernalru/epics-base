@@ -37,7 +37,8 @@ static const iocshArg * const dbLoadDatabaseArgs[3] =
     &dbLoadDatabaseArg0,&dbLoadDatabaseArg1,&dbLoadDatabaseArg2
 };
 static const iocshFuncDef dbLoadDatabaseFuncDef =
-    {"dbLoadDatabase",3,dbLoadDatabaseArgs};
+    {"dbLoadDatabase",3,dbLoadDatabaseArgs,
+     "Loads database definition files describing the record/device/driver support used by the application.\n"};
 static void dbLoadDatabaseCallFunc(const iocshArgBuf *args)
 {
     iocshSetError(dbLoadDatabase(args[0].sval,args[1].sval,args[2].sval));
