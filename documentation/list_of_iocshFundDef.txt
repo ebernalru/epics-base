@@ -105,6 +105,7 @@
 [NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:157:static const iocshFuncDef dbReportDeviceConfigFuncDef = {
 
 - ebernalru
+[OK]  modules/database/src/ioc/db/dbIocRegister.c:50:static const iocshFuncDef dbLoadDatabaseFuncDef = {"dbLoadDatabase",3,dbLoadDatabaseArgs};
 [OK]  modules/database/src/ioc/db/dbIocRegister.c:50:static const iocshFuncDef dbLoadRecordsFuncDef = {"dbLoadRecords",2,dbLoadRecordsArgs};
 [OK]  modules/database/src/ioc/db/dbIocRegister.c:59:static const iocshFuncDef dbbFuncDef = {"dbb",1,dbbArgs,
 [OK]  modules/database/src/ioc/db/dbIocRegister.c:66:static const iocshFuncDef dbdFuncDef = {"dbd",1,dbdArgs,
