@@ -17,8 +17,6 @@
 
 [NOT]  modules/database/src/ioc/misc/dlload.c:22:static const iocshFuncDef dlloadFuncDef = {"dlload", 1, dlloadArgs};
 
-[NOT]  modules/database/src/ioc/rsrv/rsrvIocRegister.c:23:static const iocshFuncDef casrFuncDef = {"casr",1,casrArgs};
-
 [NOT]  modules/database/src/ioc/registry/registryIocRegister.c:24:static const iocshFuncDef registryRecordTypeFindFuncDef = {
 [NOT]  modules/database/src/ioc/registry/registryIocRegister.c:31:static const iocshFuncDef registryDeviceSupportFindFuncDef = {
 [NOT]  modules/database/src/ioc/registry/registryIocRegister.c:38:static const iocshFuncDef registryDriverSupportFindFuncDef = {
@@ -27,6 +25,9 @@
 [NOT]  modules/database/src/template/top/exampleApp/src/initTrace.c:31:static const iocshFuncDef traceInitFuncDef = {"traceIocInit", 0, NULL};
 
 [NOT]  modules/database/src/template/top/exampleApp/src/_APPNAME_Hello.c:20:static const iocshFuncDef helloFuncDef = {"hello", 1, helloArgs};
+
+- zioven
+[OK*]  modules/database/src/ioc/rsrv/rsrvIocRegister.c:23:static const iocshFuncDef casrFuncDef = {"casr",1,casrArgs};
 
 - zioven
 [OK]  modules/database/src/ioc/as/asIocRegister.c:44:static const iocshFuncDef asInitFuncDef = {"asInit",0,0,
@@ -92,14 +93,14 @@
 
 - oksanagit
 [OK]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:26:static const iocshFuncDef dbDumpPathFuncDef = {"dbDumpPath",1,dbDumpPathArgs,
-[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:48:static const iocshFuncDef dbDumpMenuFuncDef = {"dbDumpMenu",2,dbDumpMenuArgs};
-[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:68:static const iocshFuncDef dbDumpFieldFuncDef = {"dbDumpField",3,dbDumpFieldArgs};
-[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:77:static const iocshFuncDef dbDumpDeviceFuncDef = {"dbDumpDevice",2,dbDumpDeviceArgs};
-[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:85:static const iocshFuncDef dbDumpDriverFuncDef = {"dbDumpDriver",1,dbDumpDriverArgs};
+[OK]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:48:static const iocshFuncDef dbDumpMenuFuncDef = {"dbDumpMenu",2,dbDumpMenuArgs};
+[OK]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:68:static const iocshFuncDef dbDumpFieldFuncDef = {"dbDumpField",3,dbDumpFieldArgs};
+[OK]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:77:static const iocshFuncDef dbDumpDeviceFuncDef = {"dbDumpDevice",2,dbDumpDeviceArgs};
+[OK]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:85:static const iocshFuncDef dbDumpDriverFuncDef = {"dbDumpDriver",1,dbDumpDriverArgs};
 [NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:93:static const iocshFuncDef dbDumpLinkFuncDef = {"dbDumpLink",1,dbDumpLinkArgs};
-[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:101:static const iocshFuncDef dbDumpRegistrarFuncDef = {"dbDumpRegistrar",1,dbDumpRegistrarArgs};
-[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:109:static const iocshFuncDef dbDumpFunctionFuncDef = {"dbDumpFunction",1,dbDumpFunctionArgs};
-[NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:117:static const iocshFuncDef dbDumpVariableFuncDef = {"dbDumpVariable",1,dbDumpVariableArgs};
+[OK]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:101:static const iocshFuncDef dbDumpRegistrarFuncDef = {"dbDumpRegistrar",1,dbDumpRegistrarArgs};
+[OK]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:109:static const iocshFuncDef dbDumpFunctionFuncDef = {"dbDumpFunction",1,dbDumpFunctionArgs};
+[OK]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:117:static const iocshFuncDef dbDumpVariableFuncDef = {"dbDumpVariable",1,dbDumpVariableArgs};
 [NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:138:static const iocshFuncDef dbPvdDumpFuncDef = {"dbPvdDump",2,dbPvdDumpArgs};
 [NOT]  modules/database/src/ioc/dbStatic/dbStaticIocRegister.c:157:static const iocshFuncDef dbReportDeviceConfigFuncDef = {
 
